@@ -1,3 +1,13 @@
+.navbar
+{
+    background-color:black;
+}
+
+.navbar-brand
+{
+    color: white;
+}
+
 .card
 {
     padding-top: 50px;
@@ -17,7 +27,7 @@ h2
 
 section {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .projects-section .featured-text {
@@ -40,6 +50,24 @@ section {
 .projects-section .project-text {
     padding: 3rem;
     font-size: 90%;
+}
+
+footer
+{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.fab
+{
+    color: rgba(0,0,0,0.8);
+    font-size: 1.5rem;
+}
+
+.fab.fab-footer
+{
+    color: rgba(255,255,255,0.8);
+    font-size: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -97,8 +125,8 @@ section {
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     border-left: 0;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
+    -webkit-transform-origin: left ;
+    transform-origin: left;
 }
 .progress .progress-right{
     right: 0;
@@ -108,8 +136,8 @@ section {
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
     border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
+    -webkit-transform-origin: right;
+    transform-origin: right;
     animation: loading-1 1.8s linear forwards;
 }
 .progress .progress-value{
@@ -148,6 +176,20 @@ section {
 }
 .progress.green .progress-left .progress-bar{
     animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+.progress.orange .progress-bar{
+    border-color: #ffff26;
+}
+.progress.orange .progress-left .progress-bar{
+    animation: loading-6 1.2s linear forwards 1.8s;
+}
+
+.progress.red .progress-bar{
+    border-color: #ff5e48;
+}
+.progress.red .progress-left .progress-bar{
+    animation: loading-7 1.2s linear forwards 1.8s;
 }
 @keyframes loading-1{
     0%{
@@ -195,10 +237,33 @@ section {
         transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(126deg);
-        transform: rotate(126deg);
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
     }
 }
+
+@keyframes loading-6{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes loading-7{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+}
+
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
 }
